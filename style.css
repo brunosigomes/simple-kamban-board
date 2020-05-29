@@ -1,0 +1,88 @@
+html {
+    font-family: monospace;
+}
+
+body {
+    background-color: #130f0d;
+    min-height: 97vh;
+    color: #fff;
+}
+
+.boards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 97vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.board {
+    background: #141316;
+    border: 1px solid #FD951F11;
+    display: inline-table;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.board h3 {
+    padding: 16px;
+    margin: 0;
+    color: #fd951fcc;
+}
+
+.dropzone {
+    padding: 16px;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.card {
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #fd951fcc;
+    width: 250px;
+    margin: 25px auto;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    background: #1a1a1c;
+    cursor: pointer;
+}
+
+.status {
+    width: 30px;
+    height: 8px;
+    background: gray;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green {
+    background: #23d2ac;
+}
+
+.status.blue {
+    background: #33adff;
+}
+
+.status.red {
+    background: #f02;
+}
+
+.highlight {
+    background-color: #fd951f08;
+}
+
+.card, .dropzone {
+    transition: .4s;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.is-over {
+    background: #4cd13711;
+}
